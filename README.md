@@ -6,7 +6,7 @@ Authors: [Zhengdao Chen](https://cims.nyu.edu/~chenzh/) (NYU), [Lei Chen](https:
 
 ## Explaining the implementation (possible)
 
-Since the current implementation is quite complicated despite of its conceptual simplicity, we might release a detailed explanation in the future. Core operations have been explained concretely in ``Appendix K``.
+Since the current implementation is quite complicated despite of its conceptual simplicity, we might release a detailed explanation in the future. Some of core operations have been explained concretely in ``Appendix K``.
 
 ## Dependencies
 
