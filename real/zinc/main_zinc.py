@@ -200,6 +200,8 @@ def main():
     parser.add_argument('--output_folder', type=str, default="results_gindataset")
     parser.add_argument('--output_file', type=str, default="0")
     parser.add_argument('--alldegree', action = 'store_true', default = False)
+    
+    parser.add_argument('--lrp_save_path', type = str, default = "./data/lrp_preprocessed/")
     args = parser.parse_args()
    
     print(args)
@@ -219,9 +221,9 @@ def main():
         torch.backends.cudnn.enabled=False
         torch.backends.cudnn.deterministic=True
 
-    dataset_train = ZINC_LRP(part = "train", lrp_save_path = "/misc/vlgscratch4/BrunaGroup/lei/LRP_hiv", lrp_depth = args.lrp_depth, subtensor_length = args.lrp_length, lrp_width = args.lrp_width)
-    dataset_val = ZINC_LRP(part = "val", lrp_save_path = "/misc/vlgscratch4/BrunaGroup/lei/LRP_hiv", lrp_depth = args.lrp_depth, subtensor_length = args.lrp_length, lrp_width = args.lrp_width)
-    dataset_test = ZINC_LRP(part = "test", lrp_save_path = "/misc/vlgscratch4/BrunaGroup/lei/LRP_hiv", lrp_depth = args.lrp_depth, subtensor_length = args.lrp_length, lrp_width = args.lrp_width)
+    dataset_train = ZINC_LRP(part = "train", lrp_save_path = args.lrp_save_path, lrp_depth = args.lrp_depth, subtensor_length = args.lrp_length, lrp_width = args.lrp_width)
+    dataset_val = ZINC_LRP(part = "val", lrp_save_path = args.lrp_save_path, lrp_depth = args.lrp_depth, subtensor_length = args.lrp_length, lrp_width = args.lrp_width)
+    dataset_test = ZINC_LRP(part = "test", lrp_save_path = args.lrp_save_path, lrp_depth = args.lrp_depth, subtensor_length = args.lrp_length, lrp_width = args.lrp_width)
 
     num_tasks = dataset_val.num_tasks # obtaining the number of prediction tasks in a dataset
 

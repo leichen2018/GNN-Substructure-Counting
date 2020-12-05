@@ -22,6 +22,13 @@ from tqdm import tqdm
         ``https://github.com/graphdeeplearning/benchmarking-gnns/blob/master/data/molecules.py''
 '''
 
+# Download `ZINC.pkl` following `https://github.com/graphdeeplearning/benchmarking-gnns/blob/master/data/script_download_molecules.sh`
+# Put ZINC.pkl under `./data`
+# 
+
+molecule_zip_dir = './data/'
+molecule_fold_dir = './data/molecules'
+
 class MoleculeDGL(torch.utils.data.Dataset):
     def __init__(self, data_dir, split, num_graphs):
         self.data_dir = data_dir
@@ -105,7 +112,8 @@ class MoleculeDatasetDGL(torch.utils.data.Dataset):
         self.num_atom_type = 28 # known meta-info about the zinc dataset; can be calculated as well
         self.num_bond_type = 4 # known meta-info about the zinc dataset; can be calculated as well
         
-        data_dir='/home/lc3909/lei/ZINC/molecules'
+        # data_dir='/home/lc3909/lei/ZINC/molecules'
+        data_dir = molecule_fold_dir
         
         self.train = MoleculeDGL(data_dir, 'train', num_graphs=10000)
         self.val = MoleculeDGL(data_dir, 'val', num_graphs=1000)
@@ -122,7 +130,8 @@ class MoleculeDataset(torch.utils.data.Dataset):
         print("[I] Loading dataset %s..." % (name))
         self.name = name
         # data_dir = 'data/molecules/'
-        data_dir = '/home/lc3909/lei/ZINC/'
+        # data_dir = '/home/lc3909/lei/ZINC/'
+        data_dir = molecule_zip_dir
         with open(data_dir+name+'.pkl',"rb") as f:
             f = pickle.load(f)
             self.train = f[0]

@@ -1,4 +1,14 @@
-These are scripts for ZINC results in Table 9.
+# ZINC 
+
+## Data preparation
+
+Download ``ZINC.pkl`` following ``https://github.com/graphdeeplearning/benchmarking-gnns/blob/master/data/script_download_molecules.sh`` and put it in `./data/`. If the path is renamed, change ``molecule_zip_dir`` and ``molecule_fold_dir`` in ``dataset_zinc.py`` accordingly.
+
+## LRP preparation
+
+Prepared LRP sequences will be automatically stored in ``./data/lrp_save_path/``, which takes hours to preprocess whole dataset. We will upload preprocessed files for direct utilization later.
+
+## Scripts for results in Table 9
 
 Deep LRP-7-1 with performance of 0.317±0.031:
 
