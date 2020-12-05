@@ -2,7 +2,7 @@
 
 We include five substructure counting tasks: 3-stars, triangles, tailed triangles, chordal cycles and attributed triangles. 3-star is a subgraph-counting task while the remaining are induced-subgraph-counting.
 
-## Data prepration
+## Data preparation
 
 In the ``./data`` folder, ``*.bin`` stores all graphs and corresponding labels of substructure counting that can be loaded with **DGL 0.4.3**, while ``*.txt`` stores graph indices for training/validation/testing. Dataset1 and Dataset2 stand for datasets of Erdos-Renyi and Random Regular graphs. For details, we refer to ``line 97-127`` in ``dataset_synthetic.py``.
 
