@@ -4,10 +4,6 @@ The official implementation of ''Can Graph Neural Networks Count Substructures?'
 
 Authors: [Zhengdao Chen](https://cims.nyu.edu/~chenzh/) (NYU), [Lei Chen](https://leichen2018.github.io) (NYU), [Soledad Villar](https://cims.nyu.edu/~villar/) (JHU), [Joan Bruna](https://cims.nyu.edu/~bruna/) (NYU).
 
-## Explaining the implementation (possible)
-
-Since the current implementation is quite complicated despite of its conceptual simplicity, we might release a detailed explanation in the future. Some of core operations have been explained concretely in ``Appendix K``.
-
 ## Dependencies
 
 Core packages:
