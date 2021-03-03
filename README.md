@@ -2,7 +2,7 @@
 
 The official implementation of ''Can Graph Neural Networks Count Substructures?'' at NeurIPS 2020.
 
-Authors: [Zhengdao Chen](https://cims.nyu.edu/~chenzh/) (NYU), [Lei Chen](https://leichen2018.github.io) (NYU), [Soledad Villar](https://cims.nyu.edu/~villar/) (JHU), [Joan Bruna](https://cims.nyu.edu/~bruna/) (NYU).
+Authors: [Zhengdao Chen](https://cims.nyu.edu/~chenzh/) (NYU), [Lei Chen](https://leichen2018.github.io) (NYU), [Soledad Villar](https://www.ams.jhu.edu/villar/) (JHU), [Joan Bruna](https://cims.nyu.edu/~bruna/) (NYU).
 
 ## Dependencies
 
@@ -36,5 +36,19 @@ Note that
   author={Chen, Zhengdao and Chen, Lei and Villar, Soledad and Bruna, Joan},
   journal={arXiv preprint arXiv:2002.04025},
   year={2020}
+}
+```
+or
+```
+@inproceedings{NEURIPS2020_75877cb7,
+ author = {Chen, Zhengdao and Chen, Lei and Villar, Soledad and Bruna, Joan},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {H. Larochelle and M. Ranzato and R. Hadsell and M. F. Balcan and H. Lin},
+ pages = {10383--10395},
+ publisher = {Curran Associates, Inc.},
+ title = {Can Graph Neural Networks Count Substructures?},
+ url = {https://proceedings.neurips.cc/paper/2020/file/75877cb75154206c4e65e76b88a12712-Paper.pdf},
+ volume = {33},
+ year = {2020}
 }
 ```
